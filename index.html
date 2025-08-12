@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caffaro Consultora | Laboratorio de Agua, Suelo y Efluentes</title>
+    <meta name="description"
+        content="Análisis confiables de agua, suelo y efluentes. Capacitaciones en control de calidad de agua potable. Río Cuarto y zona.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header aria-label="Barra de navegación principal">
+        <div class="container nav">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <img class="brand__img" src="./media/logo.png" alt="Logo de Caffaro Consultora">
+            </a>
+
+            <input id="menu" type="checkbox" class="menu-toggle" aria-label="Abrir menú">
+            <label class="hamburger" for="menu" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav aria-label="Navegación de sitio">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="container hero__grid">
+            <div>
+                <span class="badge">Laboratorio • Río Cuarto y zona</span>
+                <h1>Análisis confiables para decisiones seguras</h1>
+                <p>Agua, suelo y efluentes con estándares de calidad. También brindamos
+                    capacitaciones en control de calidad de agua potable para empresas y municipios.</p>
+                <div class="cta">
+                    <a class="btn btn--primary" href="#contacto">Solicitar presupuesto</a>
+                    <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+                </div>
+            </div>
+
+            <!-- Imagen en Hero -->
+            <img src="./media/hero_fondo.png" alt="Laboratorio de análisis" class="hero__img">
+        </div>
+    </section>
+
+    <!-- RESUMEN SERVICIOS -->
+    <section aria-labelledby="servicios-title">
+        <div class="container">
+            <div class="section__head">
+                <h2 id="servicios-title" class="section__title">¿Qué hacemos?</h2>
+                <p class="section__desc">Servicios principales del laboratorio</p>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <img src="./media/agua.png" alt="Análisis de agua">
+                    <span class="pill">Agua</span>
+                    <h3>Análisis de agua</h3>
+                    <p>Parámetros fisicoquímicos y microbiológicos para consumo humano, animal y uso productivo.</p>
+                </article>
+                <article class="card">
+                    <img src="./media/suelo.png" alt="Análisis de suelo">
+                    <span class="pill">Suelo</span>
+                    <h3>Fertilidad de suelos</h3>
+                    <p>Diagnóstico y recomendaciones para optimizar rendimiento y cuidar el recurso.</p>
+                </article>
+                <article class="card">
+                    <img src="./media/efluente.png" alt="Control de efluentes">
+                    <span class="pill">Efluentes</span>
+                    <h3>Efluentes y control</h3>
+                    <p>Monitoreo y reportes para cumplimiento normativo ambiental.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre" aria-labelledby="sobre-title">
+        <div class="container">
+            <div class="section__head">
+                <h2 id="sobre-title" class="section__title">Sobre nosotros</h2>
+            </div>
+            <div class="about">
+                <div class="about__box">
+                    <h3>Confianza, innovación y prevención</h3>
+                    <p>Somos un laboratorio con enfoque técnico y atención cercana a productores, empresas y municipios.
+                        Trabajamos con procedimientos claros y trazables para garantizar resultados confiables.</p>
+                    <ul class="list">
+                        <li>Protocolos internos y calibración de equipos.</li>
+                        <li>Reportes claros y orientados a la toma de decisiones.</li>
+                        <li>Capacitaciones en control de calidad de agua potable.</li>
+                    </ul>
+                </div>
+
+                <!-- Imagen en Sobre nosotros -->
+                <img src="./media/nosotros.png" alt="Equipo del laboratorio" class="about__img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICIOS DETALLADOS -->
+    <section id="servicios" aria-labelledby="detallados-title">
+        <div class="container">
+            <div class="section__head">
+                <h2 id="detallados-title" class="section__title">Servicios detallados</h2>
+                <p class="section__desc">Agua, suelo, efluentes y capacitaciones</p>
+            </div>
+
+            <div class="grid-2">
+                <article class="service">
+                    <h3>Agua</h3>
+                    <p>Consumo humano y animal, riego, industrial, pulverizaciones. Informes con interpretación.</p>
+                </article>
+                <article class="service service--soil">
+                    <h3>Suelo</h3>
+                    <p>Fertilidad, materia orgánica, recomendaciones de manejo y abonado.</p>
+                </article>
+                <article class="service service--eff">
+                    <h3>Efluentes</h3>
+                    <p>Monitoreo y reportes para cumplimiento de normativas municipales y provinciales.</p>
+                </article>
+                <article class="service service--cap">
+                    <h3>Capacitaciones</h3>
+                    <p>Control de calidad de agua potable para equipos técnicos y operativos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- INSTAGRAM -->
+    <section id="instagram" aria-labelledby="ig-title">
+        <div class="container">
+            <div class="section__head">
+                <h2 id="ig-title" class="section__title">Instagram</h2>
+                <a class="btn btn--ghost" href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">
+                    Seguir cuenta
+                </a>
+            </div>
+
+            <!-- Widget de SnapWidget -->
+            <div class="insta-feed">
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe src="https://snapwidget.com/embed/1105218" class="snapwidget-widget" allowtransparency="true"
+                    frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:400px">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contacto-title">
+        <div class="container">
+            <div class="section__head">
+                <h2 id="contacto-title" class="section__title">Contacto</h2>
+                <p class="section__desc">Solicitá tu presupuesto o escribinos por consultas</p>
+            </div>
+
+            <div class="contact">
+                <form aria-label="Formulario de contacto"
+                    onsubmit="event.preventDefault(); alert('¡Gracias! Te responderemos a la brevedad.');">
+                    <div class="field">
+                        <label for="name">Nombre y apellido</label>
+                        <input id="name" name="name" autocomplete="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" autocomplete="email" placeholder="tu@email.com"
+                            required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Teléfono</label>
+                        <input id="phone" name="phone" autocomplete="tel" placeholder="+54 9 ...">
+                    </div>
+                    <div class="field">
+                        <label for="service">Servicio de interés</label>
+                        <select id="service" name="service">
+                            <option>Agua</option>
+                            <option>Suelo</option>
+                            <option>Efluentes</option>
+                            <option>Capacitaciones</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="msg">Mensaje</label>
+                        <textarea id="msg" name="message" placeholder="Contanos brevemente tu necesidad"></textarea>
+                    </div>
+                    <button class="btn btn--primary" type="submit">Enviar consulta</button>
+                </form>
+
+                <div class="map" aria-label="Ubicación">
+                    <iframe title="Mapa de Caffaro Consultora" width="100%" height="100%" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://maps.google.com/maps?q=R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer__grid">
+            <div>
+                <h4>Caffaro Consultora</h4>
+                <p>Laboratorio de agua, suelo y efluentes. Capacitaciones en control de calidad de agua potable.</p>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>Río Cuarto, Córdoba, Argentina<br>
+                    Tel: +54 9 358 xxx xxxx<br>
+                    Email: contacto@caffaro.com</p>
+            </div>
+            <div>
+                <h4>Redes</h4>
+                <p><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            © <span id="year"></span> Caffaro Consultora. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a class="wa" href="https://wa.me/5493580000000" target="_blank" rel="noopener"
+        aria-label="Chatear por WhatsApp">WhatsApp</a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
