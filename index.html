@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Caffaro Consultora | Laboratorio de Agua, Suelo y Efluentes</title>
+
+    <link rel="icon" href="./media/favicon.png" type="image/x-icon">
+
     <meta name="description"
         content="Análisis confiables de agua, suelo y efluentes. Capacitaciones en control de calidad de agua potable. Río Cuarto y zona.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,7 +174,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 id="ig-title" class="section__title">Instagram</h2>
-                <a class="btn btn--ghost" href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">
+                <a class="btn btn--ghost" href="https://www.instagram.com/caffaro_consultora/" target="_blank"
+                    rel="noopener">
                     Seguir cuenta
                 </a>
             </div>
@@ -195,21 +199,24 @@
             </div>
 
             <div class="contact">
-                <form aria-label="Formulario de contacto"
-                    onsubmit="event.preventDefault(); alert('¡Gracias! Te responderemos a la brevedad.');">
+                <form action="https://formsubmit.co/dcb201a2c64cb0bafc435ebff1e7af75" method="POST">
+                    <!-- Campos visibles -->
                     <div class="field">
                         <label for="name">Nombre y apellido</label>
                         <input id="name" name="name" autocomplete="name" placeholder="Tu nombre" required>
                     </div>
+
                     <div class="field">
                         <label for="email">Email</label>
                         <input id="email" type="email" name="email" autocomplete="email" placeholder="tu@email.com"
                             required>
                     </div>
+
                     <div class="field">
                         <label for="phone">Teléfono</label>
                         <input id="phone" name="phone" autocomplete="tel" placeholder="+54 9 ...">
                     </div>
+
                     <div class="field">
                         <label for="service">Servicio de interés</label>
                         <select id="service" name="service">
@@ -220,17 +227,36 @@
                             <option>Otro</option>
                         </select>
                     </div>
+
                     <div class="field">
                         <label for="msg">Mensaje</label>
-                        <textarea id="msg" name="message" placeholder="Contanos brevemente tu necesidad"></textarea>
+                        <textarea id="msg" name="message" placeholder="Contanos brevemente tu necesidad"
+                            required></textarea>
                     </div>
+
+                    <!-- Opcionales FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nueva consulta desde la web – Caffaro Consultora">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <!-- Redirección post-envío (cambiá por tu URL de gracias) -->
+                    <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+                    <!-- Autorespuesta al usuario (si querés) -->
+                    <input type="hidden" name="_autoresponse"
+                        value="¡Gracias por contactarnos! Recibimos tu mensaje y te responderemos a la brevedad.">
+
+                    <!-- Anti-spam (honeypot): mantener vacío -->
+                    <input type="text" name="_honey" style="display:none">
+
                     <button class="btn btn--primary" type="submit">Enviar consulta</button>
+                    <div id="formMessage" style="display:none; margin-top:10px; color:green; font-weight:bold;">
+                        ¡Gracias por tu mensaje! Te responderemos a la brevedad.
+                    </div>
                 </form>
 
                 <div class="map" aria-label="Ubicación">
                     <iframe title="Mapa de Caffaro Consultora" width="100%" height="100%" loading="lazy" allowfullscreen
                         referrerpolicy="no-referrer-when-downgrade"
-                        src="https://maps.google.com/maps?q=R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.606630617184!2d-64.35835252416629!3d-33.1194240806363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2006b6f14ab1b%3A0xe423248824547831!2sMar%C3%ADa%20Olguin%20460%2C%20X5800%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1755019665808!5m2!1ses-419!2sar"></iframe>
                 </div>
             </div>
         </div>
@@ -246,21 +272,23 @@
             <div>
                 <h4>Contacto</h4>
                 <p>Río Cuarto, Córdoba, Argentina<br>
-                    Tel: +54 9 358 xxx xxxx<br>
-                    Email: contacto@caffaro.com</p>
+                    Tel: +54 9 358 418 0490<br>
+                    Email: consultoracaffaro@gmail.com</p>
             </div>
             <div>
                 <h4>Redes</h4>
-                <p><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+                <p><a href="https://www.instagram.com/caffaro_consultora/" target="_blank" rel="noopener">Instagram</a></p>
+                <p><a href="https://www.facebook.com/caffaroconsultora/" target="_blank" rel="noopener">Facebook</a></p>
             </div>
         </div>
         <div class="container footer__bottom">
-            © <span id="year"></span> Caffaro Consultora. Todos los derechos reservados.
+            © <span id="year"></span> Desarrollado por <strong><a
+                    href="https://golandingstudio.com/">GoLanding</a></strong>. Todos los derechos reservados.
         </div>
     </footer>
 
     <!-- WHATSAPP FLOAT -->
-    <a class="wa" href="https://wa.me/5493580000000" target="_blank" rel="noopener"
+    <a class="wa" href="https://wa.me/5493584180490" target="_blank" rel="noopener"
         aria-label="Chatear por WhatsApp">WhatsApp</a>
 
     <script>
@@ -269,6 +297,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío normal
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        form.reset(); // Limpia el formulario
+                        document.getElementById("formMessage").style.display = "block"; // Muestra mensaje
+                    } else {
+                        alert("Ocurrió un error. Intenta nuevamente.");
+                    }
+                })
+                .catch(() => alert("Error al enviar. Verifica tu conexión."));
+        });
+    </script>
 </body>
 
 </html>
