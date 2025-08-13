@@ -582,7 +582,7 @@ footer {
 .gallery__item img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 5;
     /* cuadradas */
     object-fit: cover;
     display: block;
