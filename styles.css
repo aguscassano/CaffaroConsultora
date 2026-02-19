@@ -673,6 +673,8 @@ footer {
 .carousel-item img {
     object-fit: cover;
     height: 100vh;
+    filter: saturate(1.4) contrast(1.1) brightness(1.05);
+    image-rendering: auto;
 }
 
 
