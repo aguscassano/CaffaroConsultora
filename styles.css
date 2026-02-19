@@ -674,3 +674,38 @@ footer {
     object-fit: cover;
     height: 100vh;
 }
+
+
+.overlay-context .container {
+    padding-top: 80px; 
+}
+
+@media (max-width: 768px) {
+    .overlay-context .container {
+        padding-top: 60px; 
+        justify-content: center; 
+    }
+
+    .hero__grid {
+        min-height: auto; 
+        padding-block: 20px;
+        gap: 15px;
+    }
+
+    .hero__grid h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.2;
+    }
+
+    .hero__grid p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+}
+
+.hero__grid .badge {
+    margin-bottom: 10px;
+    align-self: center; 
+    display: inline-block;
+    width: fit-content;
+}
